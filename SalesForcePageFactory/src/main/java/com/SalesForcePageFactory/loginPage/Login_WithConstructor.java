@@ -18,13 +18,15 @@ import org.openqa.selenium.support.PageFactory;
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath="//img[@class='img-responsive']")
+	//@FindBy(xpath="//img[@class='img-responsive']")
+	@FindBy(xpath="//a[@class='dropdown-toggle disabled']")
 	public WebElement login_Link;
 	
 	
 
-	public void clickOnLoginLink() {
+	public WebElement clickOnLoginLink() {
 		login_Link.click();
+		return login_Link;
 		
 	}
 	
@@ -32,30 +34,33 @@ import org.openqa.selenium.support.PageFactory;
 	
 	@FindBy(how = How.ID, using = "username")private WebElement userid;
 	
-	public void enterYourUserName(String whatIsYourUserName) {
+	public WebElement enterYourUserName(String whatIsYourUserName) {
 		userid.sendKeys(whatIsYourUserName);
+		return userid;
 		
 	}
 	
 	@FindBy(how = How.CSS, using = "#password")private WebElement password;
 	
-	public void enterYourPassword(String whatIsYourPassword) {
+	public WebElement enterYourPassword(String whatIsYourPassword) {
 		password.sendKeys(whatIsYourPassword);
+		return password;
 		
 	}
 	
 	
 	@FindBy(how = How.CSS, using = "#Login")private WebElement submit;
 	
-	public void clickOnSubmitButton() {
+	public WebElement clickOnSubmitButton() {
 		submit.sendKeys(Keys.ENTER);
+		return submit;
 		
 	}
 	
-	public void loginPage(String whatIsYourUserName, String whatIsYourPassword) {
+	public WebElement loginPage(String whatIsYourUserName, String whatIsYourPassword) {
 		this.clickOnLoginLink();
 		this.enterYourUserName(whatIsYourUserName);
 		this.enterYourPassword( whatIsYourPassword);
-		this.clickOnSubmitButton();
+		return this.clickOnSubmitButton();
 	}
 	}

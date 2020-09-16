@@ -20,12 +20,14 @@ public class LoginPage {
 	  
 	  }
 	 
-	@FindBy(xpath="//img[@class='img-responsive']")
+	//@FindBy(xpath="//img[@class='img-responsive']")
+	@FindBy(xpath="//a[@class='dropdown-toggle disabled']")
 		public WebElement login_Link;
 		
 
-		public void clickOnLoginLink() {
+		public WebElement clickOnLoginLink() {
 			login_Link.click();
+			return login_Link;
 			
 		}
 		
@@ -33,23 +35,26 @@ public class LoginPage {
 		
 		@FindBy(how = How.ID, using = "username")private WebElement userid;
 		
-		public void enterYourUserName(String enterUserId) {
+		public WebElement enterYourUserName(String enterUserId) {
 			userid.sendKeys(enterUserId);
+			return userid;
 			
 		}
 		
 		@FindBy(how = How.CSS, using = "#password")private WebElement password;
 		
-		public void enterYourPassword(String enterPassword) {
+		public WebElement enterYourPassword(String enterPassword) {
 			password.sendKeys(enterPassword);
+			return password;
 			
 		}
 		
 		
 		@FindBy(how = How.CSS, using = "#Login")private WebElement submit;
 		
-		public void clickOnSubmitButton() {
+		public WebElement clickOnSubmitButton() {
 			submit.sendKeys(Keys.ENTER);
+			return submit;
 			
 		}
 

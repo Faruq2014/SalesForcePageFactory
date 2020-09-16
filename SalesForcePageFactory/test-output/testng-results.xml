@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57" started-at="2020-08-28T22:15:19Z" finished-at="2020-08-28T22:15:19Z">
+  <suite name="Default suite" duration-ms="1548" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57" started-at="2020-08-28T22:15:19Z" finished-at="2020-08-28T22:15:19Z">
+    <test name="Default test" duration-ms="1548" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
       <class name="com.SalesForcePageFactory.login.LoginTest">
-        <test-method status="PASS" signature="loginTestWithValidCredential()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@598067a5]" name="loginTestWithValidCredential" duration-ms="14" started-at="2020-08-28T22:15:19Z" finished-at="2020-08-28T22:15:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="setUp" is-config="true" duration-ms="10605" started-at="2020-09-14T01:26:54Z" finished-at="2020-09-14T01:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTestWithValidCredential()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="loginTestWithValidCredential" duration-ms="1515" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestWithValidCredential -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="tearDown" is-config="true" duration-ms="804" started-at="2020-09-14T01:27:06Z" finished-at="2020-09-14T01:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.SalesForcePageFactory.login.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

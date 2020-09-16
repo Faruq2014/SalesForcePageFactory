@@ -1,22 +1,14 @@
 package com.SalesForcePageFactory.login;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.SalesForcePageFactory.base.BaseTest;
 import com.SalesForcePageFactory.loginPage.LoginPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class LoginTest {
-	public  WebDriver driver;
-	
+public class LoginTest extends BaseTest{
+	//public  WebDriver driver;
+	/*
 	@BeforeClass
 	public void setUP() {
 		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
@@ -28,7 +20,7 @@ public class LoginTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	
+	*/
 @Test
 public void loginTestWithValidCredential() {
 	System.out.println("Assalamualaikum");
@@ -41,10 +33,10 @@ public void loginTestWithValidCredential() {
 	lp.enterYourPassword("1234");
 	lp.clickOnSubmitButton();
 }
-
+/*
 @AfterClass
 public void destroy_setUp() {
 	driver.quit();
 }
-
+*/
 }
