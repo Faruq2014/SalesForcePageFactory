@@ -1,0 +1,7 @@
+[INFO ] 2020-09-20 18:48:53.433 [main] BaseTest - properties path loaded. add something
+[INFO ] 2020-09-20 18:49:00.272 [main] BaseTest - chrome browser loaded add something
+[WARN ] 2020-09-20 18:49:06.669 [main] BaseTest - Salesforce open
+[INFO ] 2020-09-20 18:49:09.132 [main] BaseTest - login test started
+[INFO ] 2020-09-20 18:49:11.384 [main] BaseTest - user name and password inserted
+[INFO ] 2020-09-20 18:49:11.384 [main] BaseTest - log in test finish
+[INFO ] 2020-09-20 18:49:12.422 [main] BaseTest - driver close add something

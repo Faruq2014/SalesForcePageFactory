@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1548" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
+  <suite name="Default suite" duration-ms="2327" started-at="2020-09-20T22:49:09Z" finished-at="2020-09-20T22:49:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1548" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
-      <class name="com.SalesForcePageFactory.login.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="setUp" is-config="true" duration-ms="10605" started-at="2020-09-14T01:26:54Z" finished-at="2020-09-14T01:27:04Z">
+    <test name="Default test" duration-ms="2327" started-at="2020-09-20T22:49:09Z" finished-at="2020-09-20T22:49:11Z">
+      <class name="com.SalesForcePageFactory.login.Login_WithConstructorTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.SalesForcePageFactory.login.Login_WithConstructorTest@399c4be1]" name="setUp" is-config="true" duration-ms="15657" started-at="2020-09-20T22:48:53Z" finished-at="2020-09-20T22:49:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTestWithValidCredential()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="loginTestWithValidCredential" duration-ms="1515" started-at="2020-09-14T01:27:04Z" finished-at="2020-09-14T01:27:06Z">
+        <test-method status="PASS" signature="loginWithValidCredentialTest()[pri:1, instance:com.SalesForcePageFactory.login.Login_WithConstructorTest@399c4be1]" name="loginWithValidCredentialTest" duration-ms="2273" started-at="2020-09-20T22:49:09Z" finished-at="2020-09-20T22:49:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestWithValidCredential -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SalesForcePageFactory.login.LoginTest@3f49dace]" name="tearDown" is-config="true" duration-ms="804" started-at="2020-09-14T01:27:06Z" finished-at="2020-09-14T01:27:07Z">
+        </test-method> <!-- loginWithValidCredentialTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SalesForcePageFactory.login.Login_WithConstructorTest@399c4be1]" name="tearDown" is-config="true" duration-ms="994" started-at="2020-09-20T22:49:11Z" finished-at="2020-09-20T22:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.SalesForcePageFactory.login.LoginTest -->
+      </class> <!-- com.SalesForcePageFactory.login.Login_WithConstructorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

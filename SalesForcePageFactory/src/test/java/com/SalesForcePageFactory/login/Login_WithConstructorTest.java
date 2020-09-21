@@ -1,37 +1,24 @@
 package com.SalesForcePageFactory.login;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.SalesForcePageFactory.base.BaseTest;
 import com.SalesForcePageFactory.loginPage.Login_WithConstructor;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class Login_WithConstructorTest {
-	public static WebDriver driver;
-	@BeforeClass
-	public void setUP() {
-		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup(); 
-		driver = new ChromeDriver();
-		driver.get("https://www.salesforce.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}
+public class Login_WithConstructorTest extends BaseTest{
+	
+	
 	
 	@Test(priority=1)
+
 	public void loginWithValidCredentialTest() {
+		log.info("login test started");
 		Login_WithConstructor login = new Login_WithConstructor(driver);
 		login.loginPage("dddd", "1234");
-		
+		log.info("user name and password inserted");
+		log.info("log in test finish");
+	
 	}
 	
 	
-	  @AfterClass public void destroy_setUp() { driver.quit(); }
-	 
 }
